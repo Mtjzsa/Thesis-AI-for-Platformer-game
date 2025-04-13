@@ -23,14 +23,14 @@ public class MoveToFinishAgent : Agent
     private int successCount = 0;
     private int lastEpisodes = 0;
 
-    [SerializeField] private Transform finish;
+    [SerializeField] public Transform finish;
 
     [Header("Map Gen")]
     private int successfulEpisodes = 0;
-    private float initialMapLength = 5f;
-    private float maxMapLength = 170f;
+    public float initialMapLength = 5f;
+    public float maxMapLength = 170f;
     private float baseTrapInterval = 20f;
-    private float currentMapLength;
+    public float currentMapLength;
 
     [Header("Traps")]
     public GameObject[] trapPrefabs;
@@ -141,19 +141,27 @@ public class MoveToFinishAgent : Agent
         sensor.AddObservation(body.velocity.y > 0 ? 0.5f : (grounded ? 1.0f : 0.0f));
     }
 
-    private int GetTrapType(GameObject trap)
+    public int GetTrapType(GameObject trap)
     {
-        for (int i = 0; i < trapPrefabs.Length; i++)
+        if (trap.CompareTag("Trap"))
         {
-            if (trap.CompareTag(trapPrefabs[i].tag))
-            {
-                return i;
-            }
+            if (trap.name.Contains("Wall"))
+                return 0;
+            else if (trap.name.Contains("Spike"))
+                return 1;
+            else if (trap.name.Contains("Fire"))
+                return 2;
+            else if (trap.name.Contains("Platform"))
+                return 3;
+            else if (trap.name.Contains("Saw"))
+                return 4;
+            else if (trap.name.Contains("Arrow"))
+                return 5;
         }
         return -1;
     }
 
-    private GameObject FindNearestTrap()
+    public GameObject FindNearestTrap()
     {
         GameObject[] traps = GameObject.FindGameObjectsWithTag("Trap");
         GameObject nearestTrap = null;
@@ -230,7 +238,7 @@ public class MoveToFinishAgent : Agent
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground")
         {
@@ -238,7 +246,7 @@ public class MoveToFinishAgent : Agent
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.gameObject.tag == "Finish")
