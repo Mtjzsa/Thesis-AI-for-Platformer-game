@@ -5,7 +5,10 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Unity.ML-Agents",
-        "Scripts"
+        "Scripts",
+        "Unity.ML-Agents.Editor",
+        "Unity.VisualScripting.Core",
+        "Unity.VisualScripting.Flow"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
