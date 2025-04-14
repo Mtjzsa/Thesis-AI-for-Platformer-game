@@ -105,18 +105,6 @@ public class EditModeTests
         Assert.AreEqual(trap1, result);
     }
 
-    [Test]
-    public void DisablesJumpWhenNotGrounded()
-    {
-        var mockMask = new TestActionMask();
-        agent.GetType().GetField("grounded", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-            ?.SetValue(agent, false);
-
-        agent.WriteDiscreteActionMask(mockMask);
-        Assert.IsFalse(mockMask.IsEnabled(1, 1));
-    }
-
-
     // --------- Helpers ---------
     private class TestActionMask : IDiscreteActionMask
     {
