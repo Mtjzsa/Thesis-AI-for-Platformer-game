@@ -16,11 +16,9 @@ public class PlayModeTests
     [UnitySetUp]
     public IEnumerator SetUp()
     {
-        // Load the empty test scene
         yield return SceneManager.LoadSceneAsync("Test", LoadSceneMode.Single);
-        yield return new WaitForSeconds(0.1f); // Let Unity load the scene
+        yield return new WaitForSeconds(0.1f);
 
-        // Create and configure agent
         agentObj = new GameObject("TestAgentScene");
         agentObj.tag = "Player";
         rb = agentObj.AddComponent<Rigidbody2D>();

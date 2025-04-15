@@ -27157,13 +27157,16 @@ MonoBehaviour:
   maxSteps: 5000
   movespeed: 9.8
   finish: {fileID: 1711533818}
+  initialMapLength: 5
+  maxMapLength: 170
+  currentMapLength: 0
   trapPrefabs: []
   wallTrap: {fileID: 3826507594144798866, guid: 9a58ed4c7b949fb4c932353e616fd2e9, type: 3}
-  spikeTrap: {fileID: 3826507594144798866, guid: 9a58ed4c7b949fb4c932353e616fd2e9, type: 3}
-  fireTrap: {fileID: 3826507594144798866, guid: 9a58ed4c7b949fb4c932353e616fd2e9, type: 3}
-  sawPlatformTrap: {fileID: 5266677776895378100, guid: ee59bca3242723146b48ebe2d0e21aed, type: 3}
-  sawTrap: {fileID: 5266677776895378100, guid: ee59bca3242723146b48ebe2d0e21aed, type: 3}
-  arrowTrap: {fileID: 5266677776895378100, guid: ee59bca3242723146b48ebe2d0e21aed, type: 3}
+  spikeTrap: {fileID: 5266677776895378100, guid: ee59bca3242723146b48ebe2d0e21aed, type: 3}
+  fireTrap: {fileID: 3985268560918731955, guid: 9c5922324e4d42e438de9400c3c92b32, type: 3}
+  sawPlatformTrap: {fileID: 6121179502015711334, guid: 4deb25be4f385b04e98b06cf0eaef5b6, type: 3}
+  sawTrap: {fileID: 7106598739890906084, guid: 01cddac7742871e439f5956890a37d40, type: 3}
+  arrowTrap: {fileID: 1134421831416400467, guid: 1eca21ebb76cfb04f8c14a5e72aab5d4, type: 3}
 --- !u!114 &2040475977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28368,11 +28371,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7075728329829104652, guid: 310dc9b1432db024ba1a5ee88d15fffa, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5727416434786062781, guid: 310dc9b1432db024ba1a5ee88d15fffa, type: 3}
-    - {fileID: 7075728329829104652, guid: 310dc9b1432db024ba1a5ee88d15fffa, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
