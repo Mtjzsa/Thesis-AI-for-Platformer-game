@@ -84,6 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8588194603915151674}
   - component: {fileID: 6256048371435417278}
+  - component: {fileID: 2316134969965640737}
   m_Layer: 0
   m_Name: Reward
   m_TagString: TrapCheckpoint
@@ -152,6 +153,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 8.589696}
   m_EdgeRadius: 0
+--- !u!114 &2316134969965640737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034176275434200544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b7afa9e0412f438bc85de150c1a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5330436009199871054
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5822441794598869766}
   - component: {fileID: 2995489915849683485}
+  - component: {fileID: 4996148027932996389}
   m_Layer: 0
   m_Name: Reward (5)
   m_TagString: Coin
@@ -230,6 +244,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19722366, y: 0.50172806}
   m_EdgeRadius: 0
+--- !u!114 &4996148027932996389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5330436009199871054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b7afa9e0412f438bc85de150c1a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5481782987373677280
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8022242541974724049}
   - component: {fileID: 5551854040078959006}
+  - component: {fileID: 4713087060342290701}
   m_Layer: 0
   m_Name: Reward (3)
   m_TagString: Coin
@@ -308,6 +335,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19722366, y: 0.50172806}
   m_EdgeRadius: 0
+--- !u!114 &4713087060342290701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481782987373677280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b7afa9e0412f438bc85de150c1a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6259948521226964226
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7559970730350961476}
   - component: {fileID: 6048288823195911744}
+  - component: {fileID: 7503347064670853572}
   m_Layer: 0
   m_Name: Reward (2)
   m_TagString: Coin
@@ -424,6 +464,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19722366, y: 0.50172806}
   m_EdgeRadius: 0
+--- !u!114 &7503347064670853572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021833623668757907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b7afa9e0412f438bc85de150c1a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7051788767658917535
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3142937538605951991}
   - component: {fileID: 1578447749742564152}
+  - component: {fileID: 5311770437464502256}
   m_Layer: 0
   m_Name: Reward (6)
   m_TagString: Coin
@@ -502,6 +555,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19722366, y: 0.50172806}
   m_EdgeRadius: 0
+--- !u!114 &5311770437464502256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051788767658917535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b7afa9e0412f438bc85de150c1a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9165195385906488651
 GameObject:
   m_ObjectHideFlags: 0

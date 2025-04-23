@@ -115,7 +115,7 @@ public class MoveToFinishAgent : Agent
         sensor.AddObservation(body.velocity.y / 20f);
 
         sensor.AddObservation((finish.localPosition.x - transform.localPosition.x) / currentMapLength);
-
+        sensor.AddObservation(finish.localPosition.x / currentMapLength);
         GameObject nearestTrap = FindNearestTrap();
         if (nearestTrap != null)
         {
