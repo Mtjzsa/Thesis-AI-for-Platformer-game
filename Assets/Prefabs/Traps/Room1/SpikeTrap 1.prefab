@@ -101,6 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5920854843084871581}
   - component: {fileID: 7089637685501977812}
+  - component: {fileID: 7004631258232342974}
   m_Layer: 0
   m_Name: Reward
   m_TagString: TrapCheckpoint
@@ -169,6 +170,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 8.589696}
   m_EdgeRadius: 0
+--- !u!114 &7004631258232342974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521626941754011132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411b7afa9e0412f438bc85de150c1a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5064617806118880503
 GameObject:
   m_ObjectHideFlags: 0

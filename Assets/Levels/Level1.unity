@@ -520,6 +520,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8329989126883462800, guid: 8d26792bea8e1b449b1ff817f53e28b5, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4781876
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329989126883462800, guid: 8d26792bea8e1b449b1ff817f53e28b5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.41909373
+      objectReference: {fileID: 0}
     - target: {fileID: 8329989126883462803, guid: 8d26792bea8e1b449b1ff817f53e28b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -27154,7 +27162,7 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  maxSteps: 5000
+  maxSteps: 6500
   movespeed: 9.8
   finish: {fileID: 1711533818}
   initialMapLength: 5
@@ -27164,8 +27172,8 @@ MonoBehaviour:
   wallTrap: {fileID: 3826507594144798866, guid: 9a58ed4c7b949fb4c932353e616fd2e9, type: 3}
   spikeTrap: {fileID: 5266677776895378100, guid: ee59bca3242723146b48ebe2d0e21aed, type: 3}
   fireTrap: {fileID: 3985268560918731955, guid: 9c5922324e4d42e438de9400c3c92b32, type: 3}
-  sawPlatformTrap: {fileID: 6121179502015711334, guid: 4deb25be4f385b04e98b06cf0eaef5b6, type: 3}
-  sawTrap: {fileID: 7106598739890906084, guid: 01cddac7742871e439f5956890a37d40, type: 3}
+  sawPlatformTrap: {fileID: 3985268560918731955, guid: 9c5922324e4d42e438de9400c3c92b32, type: 3}
+  sawTrap: {fileID: 3826507594144798866, guid: 9a58ed4c7b949fb4c932353e616fd2e9, type: 3}
   arrowTrap: {fileID: 1134421831416400467, guid: 1eca21ebb76cfb04f8c14a5e72aab5d4, type: 3}
 --- !u!114 &2040475977
 MonoBehaviour:

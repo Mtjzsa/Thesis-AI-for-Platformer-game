@@ -18,10 +18,10 @@ public class MoveToFinishAgent : Agent
     private int directionX = 0;
     private int stepCount = 0;
 
-    //new
     private float successRate = 0f;
     private int successCount = 0;
     private int lastEpisodes = 0;
+    private float previousDistanceToGoal;
 
     [SerializeField] public Transform finish;
 
@@ -103,7 +103,7 @@ public class MoveToFinishAgent : Agent
         transform.localPosition = new Vector3(-7, -0.5f, 0);
 
         finish.localPosition = new Vector3(currentMapLength, finish.localPosition.y, finish.localPosition.z);
-
+        previousDistanceToGoal = Vector2.Distance(transform.localPosition, finish.localPosition);
         SetupTraps();
     }
 
@@ -205,6 +205,11 @@ public class MoveToFinishAgent : Agent
             return;
         }
 
+        float currentDistanceToGoal = Vector2.Distance(transform.localPosition, finish.localPosition);
+        float progressReward = previousDistanceToGoal - currentDistanceToGoal;
+        AddReward(progressReward * 0.2f);
+        previousDistanceToGoal = currentDistanceToGoal;
+
         int moveX = actions.DiscreteActions[0];
         int jump = actions.DiscreteActions[1];
 
@@ -220,7 +225,7 @@ public class MoveToFinishAgent : Agent
             directionX = -1;
             transform.localScale = new Vector3(-5, 5, 5);
             body.velocity = new Vector2(directionX * movespeed, body.velocity.y);
-            AddReward(-0.005f);
+            AddReward(-0.01f);
         }
         else if (moveX == 0) // dont move
         {
