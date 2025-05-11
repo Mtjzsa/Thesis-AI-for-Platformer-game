@@ -264,7 +264,7 @@ public class MoveToFinishAgent : Agent
             AddReward(100f);
 
             // Adjust map difficulty based on performance
-            if (lastEpisodes >= 1)
+            if (lastEpisodes >= 20)
             {
                 if (successRate > 0.8f) // 80% success rate - increase difficulty
                 {

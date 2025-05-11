@@ -1,0 +1,33 @@
+behaviors:
+    PlatformerAgent:
+        trainer_type: sac
+        hyperparameters:
+            batch_size: 128
+            buffer_size: 1000000
+            learning_rate: 3.0e-4
+            learning_rate_schedule: constant
+            init_entcoef: 0.2
+            buffer_init_steps: 5000
+            tau: 0.005
+            steps_per_update: 1.0
+            save_replay_buffer: false
+        network_settings:
+            normalize: false
+            hidden_units: 256
+            num_layers: 2
+            vis_encode_type: simple
+            goal_conditioning_type: none
+            memory:
+                sequence_length: 64
+                memory_size: 128
+            stacked_vectors: 2
+        reward_signals:
+            extrinsic:
+                gamma: 0.99
+                strength: 1.0
+        max_steps: 5e6
+        time_horizon: 128
+        summary_freq: 10000
+        keep_checkpoints: 100
+        checkpoint_interval: 50000
+        threaded: true
